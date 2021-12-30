@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "https://p-rk.github.io/rooster-js/static/css/main.8c54910e.css",
+    "main.js": "https://p-rk.github.io/rooster-js/static/js/main.e1c779bf.js",
+    "static/js/787.2320b0de.chunk.js": "https://p-rk.github.io/rooster-js/static/js/787.2320b0de.chunk.js",
+    "static/media/SEGMDL2.ttf": "https://p-rk.github.io/rooster-js/static/media/SEGMDL2.b7ddbdec4482bc8953fd.ttf",
+    "index.html": "https://p-rk.github.io/rooster-js/index.html",
+    "main.8c54910e.css.map": "https://p-rk.github.io/rooster-js/static/css/main.8c54910e.css.map",
+    "main.e1c779bf.js.map": "https://p-rk.github.io/rooster-js/static/js/main.e1c779bf.js.map",
+    "787.2320b0de.chunk.js.map": "https://p-rk.github.io/rooster-js/static/js/787.2320b0de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c54910e.css",
+    "static/js/main.e1c779bf.js"
+  ]
+}
