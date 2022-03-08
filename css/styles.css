@@ -46,6 +46,7 @@ button {
   cursor: pointer;
   line-height: auto;
   margin-top: 10px;
+  font-size: 0.9rem;
   /* font-weight: 400; */
 }
 
