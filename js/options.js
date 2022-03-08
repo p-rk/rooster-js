@@ -13,7 +13,7 @@ if (window.GTARooster) {
             bold: true,
             italic: true,
             underline: true,
-            insertImage: (file) => file,
+            insertImage: (file, callback) => callback(file),
             strikeThrough: true,
             numbering: true,
             bullet: true,
@@ -49,6 +49,9 @@ if (window.GTARooster) {
             readonly: state.readonly,
             toolbar: {
                 ...state,
+                ...(state.insertImage && {
+                    insertImage: (file, callback) => callback(file),
+                }),
             },
         };
         var editor = new EditorInstance(rootElement, config);
