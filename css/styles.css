@@ -1,68 +1,98 @@
 * {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 .main-container {
-  display: grid;
-  gap: 20px;
-  grid-column: auto;
-  grid-template-columns: minmax(auto, 200px) minmax(auto, 1fr);
-  width: 96%;
-  margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-column: auto;
+    grid-template-columns: minmax(auto, 200px) minmax(auto, 1fr);
+    width: 96%;
+    margin: auto;
+    border: 2px dashed #ccc;
+    padding: 10px;
 }
 
 .column-form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.options {
+    padding-left: 16px;
+    border-right: 2px dashed #ccc;
 }
 
 #editor {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .hide {
-  display: none !important;
+    display: none !important;
 }
 
 .code {
-  grid-column: auto;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  font-weight: 400;
-  padding: 10px;
+    grid-column: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 10px;
 }
 
 button {
-  background: hsl(206, 100%, 42%);
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  width: max-content;
-  border-radius: 4px;
-  cursor: pointer;
-  line-height: auto;
-  margin-top: 10px;
-  font-size: 0.9rem;
-  /* font-weight: 400; */
+    background: hsl(206, 100%, 42%);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    width: max-content;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: auto;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    /* font-weight: 400; */
 }
 
 button:hover {
-  background: hsl(206, 100%, 30%);
+    background: hsl(206, 100%, 30%);
 }
 
 .content {
-  width: 50%;
+    width: 50%;
 }
 
 .options-header {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .preview {
-  border: 1px dashed hsl(206, 100%, 40%);
+    border: 1px dashed hsl(206, 100%, 40%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    background-color: #faf9f8;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #a19f9d;
+    border: 2px solid #fff;
+}
+
+.animate-toolbar {
+    border-radius: 3px;
+    animation: highlight 2s ease-out;
+}
+
+@keyframes highlight {
+    from {
+        background-color: red;
+    }
 }

@@ -58,10 +58,12 @@ if (window.GTARooster) {
         const codeContent = document.querySelector('#code-content');
         codeContent.parentElement.classList.remove('hide');
         codeContent.innerText = JSON.stringify(config, null, 2);
-        document.querySelector('.toolbar').classList.add('preview');
-        window.scrollTo(0, 0, {
-            behavior: 'smooth',
-        });
+        if (Object.keys(state).length !== 0) {
+            document.querySelector('.toolbar').classList.add('animate-toolbar');
+            window.scrollTo(0, 0, {
+                behavior: 'smooth',
+            });
+        }
     });
 
     document
@@ -77,6 +79,7 @@ if (window.GTARooster) {
         .querySelector('#toolbar-options-all')
         .addEventListener('click', () => {
             options.querySelectorAll('input[type="checkbox"]').forEach((el) => {
+                console.log(el);
                 if (el.name === 'readonly') return;
                 el.toggleAttribute('checked');
             });
