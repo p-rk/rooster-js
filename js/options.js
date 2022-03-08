@@ -77,7 +77,6 @@ if (window.GTARooster) {
         .querySelector('#toolbar-options-all')
         .addEventListener('click', () => {
             options.querySelectorAll('input[type="checkbox"]').forEach((el) => {
-                console.log(el);
                 if (el.name === 'readonly') return;
                 el.toggleAttribute('checked');
             });
