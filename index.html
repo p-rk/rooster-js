@@ -1,1 +1,122 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="https://p-rk.github.io/rooster-js/logo192.png"/><title>RoosterJS Editor</title><script defer="defer" src="https://p-rk.github.io/rooster-js/static/js/main.e1c779bf.js"></script><link href="https://p-rk.github.io/rooster-js/static/css/main.c1d18d05.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+    <title>Rooster JS Editor</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="options">
+            <div class="options-header">
+                <h4>Options</h4>
+                <div style="margin: auto;">
+                    <label>
+                        <input type="checkbox" id="toolbar-options-all">
+                        <small>Select All</small>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <form name="options-form" class="column-form">
+                    <label>
+                        <input type="checkbox" name="bold">
+                        Bold
+                    </label>
+                    <label>
+                        <input type="checkbox" name="italic">
+                        Italic
+                    </label>
+                    <label>
+                        <input type="checkbox" name="underline">
+                        Underline
+                    </label>
+                    <label>
+                        <input type="checkbox" name="strikeThrough">
+                        Strike Through
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bullet">
+                        Bullet
+                    </label>
+                    <label>
+                        <input type="checkbox" name="numbering">
+                        Numbering
+                    </label>
+                    <label>
+                        <input type="checkbox" name="code">
+                        Code
+                    </label>
+                    <label>
+                        <input type="checkbox" name="indent">
+                        Indent
+                    </label>
+                    <label>
+                        <input type="checkbox" name="outdent">
+                        Outdent
+                    </label>
+                    <label>
+                        <input type="checkbox" name="alignLeft">
+                        Align Left
+                    </label>
+                    <label>
+                        <input type="checkbox" name="alignCenter">
+                        Align Center
+                    </label>
+                    <label>
+                        <input type="checkbox" name="alignRight">
+                        Align Right
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ltr">
+                        Ltr
+                    </label>
+                    <label>
+                        <input type="checkbox" name="rtl">
+                        Rtl
+                    </label>
+                    <label>
+                        <input type="checkbox" name="undo">
+                        Undo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="redo">
+                        Redo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="insertImage">
+                        Insert Image
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="readonly">
+                        <strong><em>Read only</em></strong>
+                    </label>
+                    <button type="sibmit">Update Editor</button>
+                </form>
+            </div>
+        </div>
+        <div style="width: 100%;">
+            <div id="editor"></div>
+            <button id="getcontent">Get Content</button>
+            <!-- <button id="reset">Reset</button> -->
+        </div>
+        <div class="code hide">Config
+            <pre id="code-content"></pre>
+        </div>
+        <div class="content hide"><strong>Output String</strong>
+            <textarea rows="24" cols="100" id="show-content"></textarea>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.min.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+</body>
+
+</html>
