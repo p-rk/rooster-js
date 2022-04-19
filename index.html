@@ -18,84 +18,94 @@
             <div class="options-header">
                 <h4>Options</h4>
                 <div style="margin: auto;">
-                    <label>
+                    <label for="toolbar-options-all">
                         <input type="checkbox" id="toolbar-options-all">
                         <small>Select All</small>
                     </label>
                 </div>
             </div>
             <div>
+                <div style="margin-bottom: 16px; display: flex; flex-direction: column;">
+                    <label for="width">
+                        Width
+                        <input type="range" min="0" max="100" id="width" step="5">
+                    </label>
+                    <label for="height">
+                        Height
+                        <input type="range" min="550" max="900" id="height" step="5">
+                    </label>
+                </div>
                 <form name="options-form" class="column-form">
-                    <label>
-                        <input type="checkbox" name="bold">
+                    <label for="bold">
+                        <input type="checkbox" name="bold" id="bold">
                         Bold
                     </label>
-                    <label>
-                        <input type="checkbox" name="italic">
+                    <label for="italic">
+                        <input type="checkbox" name="italic" id="italic">
                         Italic
                     </label>
-                    <label>
-                        <input type="checkbox" name="underline">
+                    <label for="underline">
+                        <input type="checkbox" name="underline" id="underline">
                         Underline
                     </label>
-                    <label>
-                        <input type="checkbox" name="strikeThrough">
+                    <label for="strikeThrough">
+                        <input type="checkbox" name="strikeThrough" id="strikeThrough">
                         Strike Through
                     </label>
-                    <label>
-                        <input type="checkbox" name="bullet">
+                    <label for="bullet">
+                        <input type="checkbox" name="bullet" id="bullet">
                         Bullet
                     </label>
-                    <label>
-                        <input type="checkbox" name="numbering">
+                    <label for="numbering">
+                        <input type="checkbox" name="numbering" id="numbering">
                         Numbering
                     </label>
-                    <label>
-                        <input type="checkbox" name="code">
+                    <label for="code">
+                        <input type="checkbox" name="code" id="code">
                         Code
                     </label>
-                    <label>
-                        <input type="checkbox" name="indent">
+                    <label for="indent">
+                        <input type="checkbox" name="indent" id="indent">
                         Indent
                     </label>
-                    <label>
-                        <input type="checkbox" name="outdent">
+                    <label for="outdent">
+                        <input type="checkbox" name="outdent" id="outdent">
                         Outdent
                     </label>
-                    <label>
-                        <input type="checkbox" name="alignLeft">
+                    <label for="alignLeft">
+                        <input type="checkbox" name="alignLeft" id="alignLeft">
                         Align Left
                     </label>
-                    <label>
-                        <input type="checkbox" name="alignCenter">
+                    <label for="alignCenter">
+                        <input type="checkbox" name="alignCenter" id="alignCenter">
                         Align Center
                     </label>
-                    <label>
-                        <input type="checkbox" name="alignRight">
+                    <label for="alignRight">
+                        <input type="checkbox" name="alignRight" id="alignRight">
                         Align Right
                     </label>
-                    <label>
-                        <input type="checkbox" name="ltr">
+                    <label for="ltr">
+                        <input type="checkbox" name="ltr" id="ltr">
                         Ltr
                     </label>
-                    <label>
-                        <input type="checkbox" name="rtl">
+                    <label for="rtl">
+                        <input type="checkbox" name="rtl" id="rtl">
                         Rtl
                     </label>
-                    <label>
-                        <input type="checkbox" name="undo">
+                    <label for="undo">
+                        <input type="checkbox" name="undo" id="undo">
                         Undo
                     </label>
-                    <label>
-                        <input type="checkbox" name="redo">
+                    <label for="redo">
+                        <input type="checkbox" name="redo" id="redo">
                         Redo
                     </label>
-                    <label>
-                        <input type="checkbox" name="insertImage">
+                    <label for="insertImage">
+                        <input type="checkbox" name="insertImage" id="insertImage">
                         Insert Image
                     </label>
 
-                    <label>
+                    <label for="">
                         <input type="checkbox" name="readonly">
                         <strong><em>Read only</em></strong>
                     </label>
