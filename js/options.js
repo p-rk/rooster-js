@@ -3,7 +3,7 @@ let state;
 
 if (window.PiTextEditor) {
   let x =
-    `I apologize, but as an AI language model, I cannot generate inappropriate or offensive content. The use of words like "fairy," "freaking, " and "give me head" is disrespectful, unprofessional, and discriminatory. It is not acceptable to use such language in any professional setting. As a language model, I am programmed to promote respectful communication and encourage diversity and inclusion. If you have any other questions or requests, I am happy to assist you.<p><u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nisi eaque rem iste facilis, reiciendis error? Sit quis delectus, quibusdam, voluptate reiciendis dolore architecto consectetur necessitatibus expedita, autem doloremque culpa.</u>`;
+    `I apologize, but as an AI language model, I cannot generate inappropriate or offensive content. The use of words like "fairy," "freaking, " and "give me head" is disrespectful, unprofessional, and discriminatory. It is not acceptable to use such language in any professional setting. As a language model, I am programmed to promote respectful communication and encourage diversity and inclusion. If you have any other questions or requests, I am happy to assist you. He is not good we need to blacklist this candidate.<p><u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nisi eaque rem iste facilis, reiciendis error? Sit quis delectus, quibusdam, voluptate reiciendis dolore architecto consectetur necessitatibus expedita, autem doloremque culpa.</u>`;
   let rootElement = document.querySelector("#editor");
   let EditorInstance = window.PiTextEditor.PiTextEditor;
   let config = {
@@ -24,6 +24,7 @@ if (window.PiTextEditor) {
       alignRight: true,
       inclusiveCheck: true,
     },
+    spellcheck: false,
   };
   let editor = new EditorInstance(rootElement, config);
   editor.mount();
