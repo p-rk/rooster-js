@@ -3,11 +3,11 @@ let state;
 
 if (window.PiTextEditor) {
   let x =
-    "<p><u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nisi eaque rem iste facilis, reiciendis error? Sit quis delectus, quibusdam, voluptate reiciendis dolore architecto consectetur necessitatibus expedita, autem doloremque culpa.</u><br>\nAssumenda ab voluptatem laboriosam sunt explicabo laborum ratione voluptates expedita obcaecati blanditiis numquam inventore, deserunt ex a nobis qui perspiciatis cupiditate dolore incidunt quae ipsam. Labore, consequatur? Corporis, facilis voluptas!<br>\nMinus obcaecati, ratione accusamus tempore sit excepturi et, nobis saepe rerum autem ab impedit! Nam provident laborum explicabo est illo temporibus nisi vitae ipsum amet voluptatibus minima, ex dicta sint.<br>\nVero saepe architecto quam optio voluptatem non quaerat cupiditate, ab temporibus aperiam nostrum necessitatibus corrupti beatae porro velit harum? Corporis a minima molestias quis minus tempora et quidem accusamus beatae.<br>\n<strong>Laudantium facere obcaecati recusandae, magni necessitatibus officia consequuntur modi. Doloremque modi nam voluptates quisquam aspernatur consectetur incidunt nostrum illo animi cumque ab numquam, dolor excepturi quia similique repellat in laudantium.</strong></p>\n\n<p> </p>\n\n<p><br>\n<strong>Quisquam temporibus explicabo eius! Adipisci doloribus, sunt facilis aperiam repudiandae animi numquam dolores est esse ullam? Asperiores minus, quia cupidit</strong>ate, blanditiis libero veritatis, itaque mollitia quaerat omnis nostrum necessitatibus distinctio!<br>\nExpedita, laudantium? Neque soluta, deserunt rerum recusandae molestiae, cum excepturi ad repellat minima doloribus unde molestias nobis praesentium repudiandae voluptatibus consectetur, beatae ipsum voluptatem assumenda illo provident veniam dolorem! Vel.<br>\nConsequatur at accusantium voluptates officiis molestias perspiciatis amet possimus iste eius distinctio ex nobis quaerat aperiam porro similique rem sit velit doloribus quisquam voluptatum quae, odit corrupti nam? Corporis, dicta.<br>\nEos excepturi odio ullam quis molestias in illum, at consequatur animi suscipit autem cum quam dolor optio perferendis <em>perspiciatis quia aliquid</em> minus explicabo nemo aliquam odit ab! Quia, reiciendis dolore!<br>\nMolestiae veniam autem fugiat consequatur, sequi doloribus error possimus, praesentium quis placeat, optio officia dolore eum tenetur. Tempore quidem, amet ex minima atque, nostrum nulla aliquid numquam, exercitationem a sint.</p>";
+    `I apologize, but as an AI language model, I cannot generate inappropriate or offensive content. The use of words like "fairy," "freaking, " and "give me head" is disrespectful, unprofessional, and discriminatory. It is not acceptable to use such language in any professional setting. As a language model, I am programmed to promote respectful communication and encourage diversity and inclusion. If you have any other questions or requests, I am happy to assist you.<p><u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nisi eaque rem iste facilis, reiciendis error? Sit quis delectus, quibusdam, voluptate reiciendis dolore architecto consectetur necessitatibus expedita, autem doloremque culpa.</u>`;
   let rootElement = document.querySelector("#editor");
   let EditorInstance = window.PiTextEditor.PiTextEditor;
   let config = {
-    width: "90%",
+    width: "100%",
     height: "500px",
     toolbar: {
       bold: true,
@@ -22,6 +22,7 @@ if (window.PiTextEditor) {
       alignLeft: true,
       alignCenter: true,
       alignRight: true,
+      inclusiveCheck: true,
     },
   };
   let editor = new EditorInstance(rootElement, config);

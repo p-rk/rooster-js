@@ -28,7 +28,7 @@
                 <div style="margin-bottom: 16px; display: flex; flex-direction: column;">
                     <label for="width">
                         Width
-                        <input type="range" min="0" max="100" id="width" step="5">
+                        <input type="range" value="100" min="0" max="100" id="width" step="5">
                     </label>
                     <label for="height">
                         Height
@@ -36,6 +36,10 @@
                     </label>
                 </div>
                 <form name="options-form" class="column-form">
+                    <label for="inclusivecheck">
+                        <input type="checkbox" name="inclusiveCheck" id="inclusivecheck">
+                        Inclusive Check
+                    </label>
                     <label for="bold">
                         <input type="checkbox" name="bold" id="bold">
                         Bold
