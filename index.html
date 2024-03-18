@@ -13,122 +13,138 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="options">
-            <div class="options-header">
-                <h4>Options</h4>
-                <div style="margin: auto;">
-                    <label for="toolbar-options-all">
-                        <input type="checkbox" id="toolbar-options-all">
-                        <small>Select All</small>
-                    </label>
-                </div>
-            </div>
-            <div>
-                <div style="margin-bottom: 16px; display: flex; flex-direction: column;">
-                    <label for="width">
-                        Width
-                        <input type="range" value="100" min="0" max="100" id="width" step="5">
-                    </label>
-                    <label for="height">
-                        Height
-                        <input type="range" min="550" max="900" id="height" step="5">
-                    </label>
-                </div>
-                <form name="options-form" class="column-form">
-                    <label for="inclusivecheck">
-                        <input type="checkbox" name="inclusiveCheck" id="inclusivecheck">
-                        Inclusive Check
-                    </label>
-                    <label for="bold">
-                        <input type="checkbox" name="bold" id="bold">
-                        Bold
-                    </label>
-                    <label for="italic">
-                        <input type="checkbox" name="italic" id="italic">
-                        Italic
-                    </label>
-                    <label for="underline">
-                        <input type="checkbox" name="underline" id="underline">
-                        Underline
-                    </label>
-                    <label for="strikeThrough">
-                        <input type="checkbox" name="strikeThrough" id="strikeThrough">
-                        Strike Through
-                    </label>
-                    <label for="bullet">
-                        <input type="checkbox" name="bullet" id="bullet">
-                        Bullet
-                    </label>
-                    <label for="numbering">
-                        <input type="checkbox" name="numbering" id="numbering">
-                        Numbering
-                    </label>
-                    <label for="code">
-                        <input type="checkbox" name="code" id="code">
-                        Code
-                    </label>
-                    <label for="indent">
-                        <input type="checkbox" name="indent" id="indent">
-                        Indent
-                    </label>
-                    <label for="outdent">
-                        <input type="checkbox" name="outdent" id="outdent">
-                        Outdent
-                    </label>
-                    <label for="alignLeft">
-                        <input type="checkbox" name="alignLeft" id="alignLeft">
-                        Align Left
-                    </label>
-                    <label for="alignCenter">
-                        <input type="checkbox" name="alignCenter" id="alignCenter">
-                        Align Center
-                    </label>
-                    <label for="alignRight">
-                        <input type="checkbox" name="alignRight" id="alignRight">
-                        Align Right
-                    </label>
-                    <label for="ltr">
-                        <input type="checkbox" name="ltr" id="ltr">
-                        Ltr
-                    </label>
-                    <label for="rtl">
-                        <input type="checkbox" name="rtl" id="rtl">
-                        Rtl
-                    </label>
-                    <label for="undo">
-                        <input type="checkbox" name="undo" id="undo">
-                        Undo
-                    </label>
-                    <label for="redo">
-                        <input type="checkbox" name="redo" id="redo">
-                        Redo
-                    </label>
-                    <label for="insertImage">
-                        <input type="checkbox" name="insertImage" id="insertImage">
-                        Insert Image
-                    </label>
+    <main>
 
-                    <label for="">
-                        <input type="checkbox" name="readonly">
-                        <strong><em>Read only</em></strong>
-                    </label>
-                    <button type="sibmit">Update Editor</button>
-                </form>
+        <div class="main-container">
+            <div class="options">
+                <div class="options-header">
+                    <h4>Options</h4>
+                    <div style="margin: auto;">
+                        <label for="toolbar-options-all">
+                            <input type="checkbox" id="toolbar-options-all">
+                            <small>Select All</small>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div style="margin-bottom: 16px; display: flex; flex-direction: column;">
+                        <label for="width">
+                            Width
+                            <input type="range" value="100" min="0" max="100" id="width" step="5">
+                        </label>
+                        <label for="height">
+                            Height
+                            <input type="range" min="550" max="900" id="height" step="5">
+                        </label>
+                    </div>
+                    <form name="options-form" class="column-form">
+                        <label for="inclusivecheck">
+                            <input type="checkbox" name="inclusiveCheck" id="inclusivecheck">
+                            Inclusive Check
+                        </label>
+                        <label for="bold">
+                            <input type="checkbox" name="bold" id="bold">
+                            Bold
+                        </label>
+                        <label for="italic">
+                            <input type="checkbox" name="italic" id="italic">
+                            Italic
+                        </label>
+                        <label for="underline">
+                            <input type="checkbox" name="underline" id="underline">
+                            Underline
+                        </label>
+                        <label for="strikeThrough">
+                            <input type="checkbox" name="strikeThrough" id="strikeThrough">
+                            Strike Through
+                        </label>
+                        <label for="bullet">
+                            <input type="checkbox" name="bullet" id="bullet">
+                            Bullet
+                        </label>
+                        <label for="numbering">
+                            <input type="checkbox" name="numbering" id="numbering">
+                            Numbering
+                        </label>
+                        <label for="code">
+                            <input type="checkbox" name="code" id="code">
+                            Code
+                        </label>
+                        <label for="indent">
+                            <input type="checkbox" name="indent" id="indent">
+                            Indent
+                        </label>
+                        <label for="outdent">
+                            <input type="checkbox" name="outdent" id="outdent">
+                            Outdent
+                        </label>
+                        <label for="alignLeft">
+                            <input type="checkbox" name="alignLeft" id="alignLeft">
+                            Align Left
+                        </label>
+                        <label for="alignCenter">
+                            <input type="checkbox" name="alignCenter" id="alignCenter">
+                            Align Center
+                        </label>
+                        <label for="alignRight">
+                            <input type="checkbox" name="alignRight" id="alignRight">
+                            Align Right
+                        </label>
+                        <label for="ltr">
+                            <input type="checkbox" name="ltr" id="ltr">
+                            Ltr
+                        </label>
+                        <label for="rtl">
+                            <input type="checkbox" name="rtl" id="rtl">
+                            Rtl
+                        </label>
+                        <label for="undo">
+                            <input type="checkbox" name="undo" id="undo">
+                            Undo
+                        </label>
+                        <label for="redo">
+                            <input type="checkbox" name="redo" id="redo">
+                            Redo
+                        </label>
+                        <label for="insertImage">
+                            <input type="checkbox" name="insertImage" id="insertImage">
+                            Insert Image
+                        </label>
+
+                        <label for="">
+                            <input type="checkbox" name="readonly">
+                            <strong><em>Read only</em></strong>
+                        </label>
+                        <button type="sibmit">Update Editor</button>
+                    </form>
+                </div>
+            </div>
+            <div class="grid-col-span-3">
+                <div class="links-container">
+
+                    <a href="https://microsoftit.visualstudio.com/OneITVSO/_wiki/wikis/OneITVSO.wiki/33830/Pi-Text-Editor-Integration"
+                        class="int-guide" target="_blank">
+                        Onboarding Guide
+                        <img src="./assets/ext-link.svg" height="16px" width="16px" alt="external link"
+                            class="ext-link">
+                    </a>
+                    <a href="https://microsoft.sharepoint.com/sites/knowledgecenter/SitePages/Platform-independent-text-Editor.aspx"
+                        class="int-guide" target="_blank">Viva Topic
+                        <img src="./assets/ext-link.svg" height="16px" width="16px" alt="external link"
+                            class="ext-link"></a>
+                </div>
+                <div id="editor"></div>
+                <button id="getcontent">Get Content</button>
+                <!-- <button id="reset">Reset</button> -->
+            </div>
+            <div class="code hide">Config
+                <pre id="code-content"></pre>
+            </div>
+            <div class="content grid-col-span-3 hide"><strong>Output String</strong>
+                <textarea rows="24" cols="100" id="show-content" readonly></textarea>
             </div>
         </div>
-        <div class="grid-col-span-3">
-            <div id="editor"></div>
-            <button id="getcontent">Get Content</button>
-            <!-- <button id="reset">Reset</button> -->
-        </div>
-        <div class="code hide">Config
-            <pre id="code-content"></pre>
-        </div>
-        <div class="content grid-col-span-3 hide"><strong>Output String</strong>
-            <textarea rows="24" cols="100" id="show-content" readonly></textarea>
-        </div>
-    </div>
+    </main>
     <script type="text/javascript" src="js/index.min.js"></script>
     <script type="text/javascript" src="js/options.js"></script>
 </body>

@@ -4,6 +4,15 @@
     font-size: 14px;
 }
 
+.links-container {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+    border-bottom: 2px dashed #ccc;
+}
+
+
 .main-container {
     display: grid;
     gap: 20px;
